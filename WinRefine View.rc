@@ -1,0 +1,428 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Inglese (Stati Uniti) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU MENU
+BEGIN
+    POPUP "Tray"
+    BEGIN
+        MENUITEM "Configure",                   IDC_CONFIGURE
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        IDC_EXIT
+    END
+END
+
+IDR_EXTMENU MENU
+BEGIN
+    POPUP "Ext"
+    BEGIN
+        MENUITEM "Remove Extension",            IDC_REMOVEEXT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_EXTDIALOG DIALOGEX 0, 0, 158, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Extension"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,29,41,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,81,41,50,14
+    LTEXT           "Extension:",IDC_EXTENSIONT,7,9,40,8
+    EDITTEXT        IDC_EXTENSION,49,7,53,12,ES_AUTOHSCROLL
+    LTEXT           "Type:",IDC_TYPET,7,23,20,8
+    CONTROL         "Audio/Video",IDC_AUDIOVIDEO,"Button",BS_AUTORADIOBUTTON,49,22,53,10
+    CONTROL         "Image",IDC_IMAGE,"Button",BS_AUTORADIOBUTTON,105,22,46,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_EXTDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 151
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Inglese (Stati Uniti) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Italiano (Italia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 183, 104
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            "",IDC_ICO,2,7,20,20
+    LTEXT           "WinRefine v0.3 by CrystalSoft",IDC_STATIC,61,10,102,8,SS_NOPREFIX
+    LTEXT           "Copyright © 2010 CrystalSoft",IDC_STATIC,61,25,99,8
+    LTEXT           "http://www.emuware.org/",IDC_LINK,61,42,89,8
+    LTEXT           "Main Site:",IDC_MAINT,2,41,56,8
+    LTEXT           "Go to Product Page",IDC_LINK2,61,54,103,8
+    LTEXT           "Product:",IDC_PRODT,2,54,56,8
+    LTEXT           "Open License Document",IDC_LINK3,61,66,103,8
+    LTEXT           "License:",IDC_LICT,2,66,53,8
+    LTEXT           "Vuoi un Sito Web su misura? Clicca qui!",IDC_SMS,22,89,131,8
+END
+
+IDD_WINREFINEVIEW_DIALOG DIALOGEX 0, 0, 285, 163
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "WinRefine v0.3 - Windows Features Extender"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Apply",IDC_APPLY,228,141,50,14
+    LTEXT           "____________________________________________________",IDC_STATIC,100,128,178,10,WS_DISABLED
+    PUSHBUTTON      "Exit",IDC_EXIT,175,141,50,14
+    CTEXT           "",IDC_CAPTION,94,7,184,12,SS_SUNKEN
+    CONTROL         "",IDC_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOLABELWRAP | LVS_ALIGNLEFT | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,7,7,83,129
+END
+
+IDD_GENERAL DIALOGEX 0, 0, 183, 110
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "Enable WinRefine",IDC_ENABLED,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,101,17,73,10
+    RTEXT           "Language:",IDC_LANGT,28,33,146,8
+    COMBOBOX        IDC_LANG,111,43,63,39,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    RTEXT           "Current Version:",IDC_CURRT,28,68,146,8
+    RTEXT           "Version 0.3 - No Updates available",IDC_VERSION,26,78,147,8
+    RTEXT           "Main WinRefine set-up:",IDC_MAINT,26,7,148,8
+    ICON            IDI_ENABLED,IDC_STATIC,2,3,20,20
+    ICON            IDI_LANG,IDC_STATIC,2,33,20,20
+    ICON            IDI_UPDATE,IDC_STATIC,2,68,20,20
+    RTEXT           "Go to Product Page",IDC_PRODLINK,98,87,76,8,0,WS_EX_RIGHT
+END
+
+IDD_SETTINGS DIALOGEX 0, 0, 183, 107
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    RTEXT           "Milliseconds to wait before preview come up:",IDC_MILLT,23,7,151,8
+    EDITTEXT        IDC_LATENCY,117,17,58,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    RTEXT           "Minium Image Width/Height for show preview:",IDC_MINT,23,34,151,8
+    EDITTEXT        IDC_HEIGHT,138,45,37,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_WIDTH,87,45,37,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Pixel:",IDC_STATIC,68,46,18,8
+    RTEXT           "Thumbnail Dimensions:",IDC_THUMBT,21,62,153,8
+    EDITTEXT        IDC_THUMBSIZE,117,73,58,12,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "x",IDC_STATIC,129,47,8,8
+    RTEXT           "Proportional Stretch Width:",IDC_STRETCHT,26,75,89,8,0,WS_EX_RIGHT
+    ICON            IDI_MOUSE,IDC_STATIC,2,3,20,20
+    ICON            IDI_IMGWIDTH,IDC_STATIC,2,27,20,20
+    ICON            IDI_STRETCH,IDC_STATIC,2,68,20,20
+END
+
+IDD_EXTENSIONS DIALOGEX 0, 0, 183, 112
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "Enabled Extensions List:",IDC_EXTT,3,7,78,8
+    CONTROL         "",IDC_EXTLIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SORTASCENDING | LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,2,17,179,72
+    PUSHBUTTON      "Add Extension",IDC_ADD,110,91,71,14
+END
+
+IDD_EFFECTS DIALOGEX 0, 0, 183, 112
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    RTEXT           "Volume for Audio/Video files:",IDC_VOLT,23,7,151,8
+    RTEXT           "Transparency for Image preview Tip:",IDC_TRANT,23,34,151,8
+    RTEXT           "Show default Windows Tooltip for Images:",IDC_TOOLT,21,62,153,8
+    ICON            IDI_VOLUME,IDC_STATIC,2,3,20,20
+    ICON            IDI_TRANSPARENCY,IDC_STATIC,2,27,20,20
+    ICON            IDI_TOOLTIP,IDC_STATIC,2,68,20,20
+    LTEXT           "-",IDC_STATIC,85,25,11,8
+    CONTROL         "",IDC_VOLUME,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,80,15,100,13
+    LTEXT           "+",IDC_STATIC,172,25,9,8
+    LTEXT           "-",IDC_STATIC,85,53,11,8
+    CONTROL         "",IDC_TRANSPARENCY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,80,42,100,13
+    LTEXT           "+",IDC_STATIC,172,53,9,8
+    CONTROL         "Enable",IDC_TOOLTIP,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,144,73,37,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 97
+    END
+
+    IDD_WINREFINEVIEW_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 278
+        VERTGUIDE, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 155
+        HORZGUIDE, 7
+        HORZGUIDE, 136
+    END
+
+    IDD_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 175
+        VERTGUIDE, 174
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 103
+    END
+
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 175
+        VERTGUIDE, 175
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 100
+    END
+
+    IDD_EXTENSIONS, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+
+    IDD_EFFECTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 105
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)\r\n"
+    "LANGUAGE 16, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\WinRefineView.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\WinRefine View.ico"
+IDR_GENERAL             ICON                    "res\\idr_main.ico"
+IDR_SETTINGS            ICON                    "res\\ico00001.ico"
+IDR_EXTENSIONS          ICON                    "res\\ico00002.ico"
+IDR_ABOUT               ICON                    "res\\ico00003.ico"
+IDI_MOUSE               ICON                    "res\\icon1.ico"
+IDI_IMGWIDTH            ICON                    "res\\ico00004.ico"
+IDI_STRETCH             ICON                    "res\\icon2.ico"
+IDI_LANG                ICON                    "res\\ico00005.ico"
+IDI_UPDATE              ICON                    "res\\ico00006.ico"
+IDI_ENABLED             ICON                    "res\\ico00007.ico"
+IDR_EFFECTS             ICON                    "res\\idr_exte.ico"
+IDI_TRANSPARENCY        ICON                    "res\\ico00008.ico"
+IDI_VOLUME              ICON                    "res\\ico00009.ico"
+IDI_TOOLTIP             ICON                    "res\\ico00010.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,3,0,0
+ PRODUCTVERSION 0,3,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Emulator, CrystalSoft"
+            VALUE "FileDescription", "WinRefine Executable"
+            VALUE "FileVersion", "0.3.0.0"
+            VALUE "InternalName", "WinRefine.exe"
+            VALUE "LegalCopyright", "Copyright © 2010 CrystalSoft"
+            VALUE "LegalTrademarks", "Copyright © 2010 CrystalSoft"
+            VALUE "OriginalFilename", "WinRefine.exe"
+            VALUE "ProductName", "WinRefine"
+            VALUE "ProductVersion", "0.3.0.0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_GENERAL DLGINIT
+BEGIN
+    IDC_LANG, 0x403, 8, 0
+0x6e45, 0x6c67, 0x7369, 0x0068, 
+    IDC_LANG, 0x403, 9, 0
+0x7449, 0x6c61, 0x6169, 0x6f6e, "\000" 
+    0
+END
+
+#endif    // Italiano (Italia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Lingua di sistema (predefinita sistema) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEUSD)
+LANGUAGE LANG_NEUTRAL, SUBLANG_SYS_DEFAULT
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_IT MENU
+BEGIN
+    POPUP "Tray"
+    BEGIN
+        MENUITEM "Configura",                   IDC_CONFIGURE
+        MENUITEM SEPARATOR
+        MENUITEM "Esci",                        IDC_EXIT
+    END
+END
+
+IDR_EXTMENU_IT MENU
+BEGIN
+    POPUP "Ext"
+    BEGIN
+        MENUITEM "Rimuovi Estensione",          IDC_REMOVEEXT
+    END
+END
+
+#endif    // Lingua di sistema (predefinita sistema) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ITA)
+LANGUAGE 16, 1
+#pragma code_page(1252)
+#include "res\WinRefineView.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
